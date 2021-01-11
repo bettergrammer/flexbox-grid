@@ -9,7 +9,7 @@
 <div class="main">
 	<div class="content">
 		<div class="main-para">
-			<h1>Welcome to this challenge!</h1>
+			<h1>Hello, and welcome to my latest creation!</h1>
 			<p>Here is your list of objectives:
 				<ul>
 					<li>Lay out the Content & Sidebar</li>
@@ -115,8 +115,36 @@
 
 			<a href=""></a>
 		</div>
+		<div style="display: flex;flex-direction:column;">
+			<h2 style="font-size: 3em; border: none; color: white; font-weight: 400;">Jason<strong style="font-weight: 900;">Wiesner</strong></h2>
+			<h2 style="border:none;color:white;font-weight: normal;">Software Engineer</h2>
+			<ul style="list-style: none;display:flex;flex-direction: column;line-height: 80%;">
+				<li>
+					<h4 style="float:left;">Phone</h4><p>   (619) 746-2897       </p>
+				</li>
+				<li>
+					<h4 style="float:left;">Email</h4><p style="float:left;">wiesnerjjason@gmail.com</p>
+				</li>
+				<li>
+					<h4 style="float:left;">Github</h4><p>github.com/bettergrammer</p>
+				</li>
+				<li>
+					<h4 style="float:left;">LinkedIn</h4><p>linkedin.com/in/wiesnerjason</p>
+				</li>
+				<li>
+					<h4 style="float:left;">Zoom</h4><p>us04web.zoom.us/j/3030296341?pwd=7YDNmW</p>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	setTimeout(() => {
+		// let userName = prompt('Hey there, uhghh..., what\'s your name again..?');
+		let h1 = document.getElementsByTagName('h1')[0];
+		h1.innerHTML = userName ? `Hello, and welcome to my latest creation ${userName}!` : `Hello, and welcome to my latest creation!`;
+	}, 100);
+</script>
 
 </body>
 </html>
