@@ -64,7 +64,7 @@ div > h1 {
 
 div > h2 {
   color: rgb(255, 145, 0);
-  border: 5px double blue;
+  border: 5px double rgb(144, 144, 255);
 }
 
 p + img {
@@ -84,4 +84,8 @@ h2 + p {
   display: flex;
   flex-direction: column;
   /* flex-wrap: wrap; */
+}
+
+.name-button {
+  background:grey;
 }
