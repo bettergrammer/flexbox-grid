@@ -133,7 +133,7 @@ ul {
 }
 
 ul:hover {
-  animation: increase-font 3s linear 0s normal 3 none;
+  animation: increase-font 1s linear 0s normal 1 none;
 }
 
 div.main-para p {
@@ -202,21 +202,21 @@ ol {
 
 @keyframes increase-font {
   0% {
-    transform: translate(15px, 30px);
+    transform: translate(5px, 5px);
     position: relative;
     z-index: 1;
   }
   33% {
-    transform: translate(0px, 60px);
+    transform: translate(0px, 5px);
     position: relative;
     z-index: 1;
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
   66% {
-    transform: translate(-15px, 30px);
+    transform: translate(5px, 5px);
     position: relative;
     z-index: 1;
-    font-size: 2em;
+    font-size: 1.2em;
   }
   100% {
     transform: translate(0px, 0px);
