@@ -39,7 +39,7 @@ img {
   padding: 10px 10px 10px 25px;
   margin: 15px;
   background-repeat: no-repeat;
-  flex: 1, 1, auto;
+  flex: 3, 1, auto;
 
   display: flex;
   flex-direction: column;
@@ -94,7 +94,7 @@ p + img {
 }
 
 p + img:hover {
-  animation: do-circle 1.5s cubic-bezier(0, 0, 0, 0) 0s 1 normal;
+  animation: enlarge-image 10s linear 0s 1 none;
 }
 
 div.content h2 + p {
@@ -132,6 +132,10 @@ ul {
   align-items: center;
 }
 
+ul:hover {
+  animation: increase-font 3s linear 0s normal 3 none;
+}
+
 div.main-para p {
   display: flex;
   align-items: center;
@@ -163,24 +167,30 @@ ol {
 
 
 
-@keyframes do-circle {
+@keyframes enlarge-image {
   25% {
     height: 510px;
     width: 30.5vw;
     position: relative;
     z-index: 1;
+    padding: 100px;
+    background: pruple;
   }
   50% {
     height: 520px;
     width: 31vw;
     position: relative;
     z-index: 1;
+    padding: 100px;
+    background: green;
   }
   75% {
     height: 510px;
     width: 30.5vw;
     position: relative;
     z-index: 1;
+    padding: 100px;
+    background: blue;
   }
   100% {
     height: 500px;
@@ -188,7 +198,7 @@ ol {
     position: relative;
     z-index: 1;
   }
-};
+}
 
 @keyframes increase-font {
   0% {
@@ -214,4 +224,4 @@ ol {
     z-index: 1;
     font-size: 1em;
   }
-};
+}
