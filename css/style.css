@@ -236,3 +236,7 @@ ol {
     font-size: 1em;
   }
 }
+
+#outer #inner {
+  background: green;
+}
