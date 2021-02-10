@@ -4,7 +4,7 @@ Secondary Front: 'Courier New', Courier, monospace;
 
 Dark Grey: rgb(70, 66, 66);
 Light Grey: rgba(255, 255, 255, 0.2);
-Orange:rgb(255, 145, 0);
+Orange: rgb(255, 145, 0);
 Light Blue: rgb(111, 197, 255, 0.521);
 
 */
@@ -239,4 +239,18 @@ ol {
 
 #outer #inner {
   background: green;
+}
+
+a {
+  margin: 5px;
+  padding: 5px;
+  background: rgba(255, 145, 0, 0.7);
+}
+
+a::before {
+  content: "Go To Article =>"
+}
+
+div.sidebar > div {
+  padding-bottom: 15px;
 }
